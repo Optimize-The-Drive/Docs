@@ -15,5 +15,3 @@ Users are able to create road trips by selecting locations on a map and/or searc
 * If logged in, they can save these trips. Otherwise, they are prompted to sign up to enable this feature.
 * If logged in, previous trips can be loaded and modified through the left control menu.
 * Users can change their password or username.
-
-### Mockups
