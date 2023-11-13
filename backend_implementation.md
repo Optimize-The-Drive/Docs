@@ -7,7 +7,16 @@ Our backend and frontend will be using Docker and Docker compose for development
 * FlaskSQLAlchemy for ORM
 * PostgreSQL
 
-###### API Routes
+#### API Routes
+**Users and Authentication**
+ - POST /api/session/login - Logging into application
+ - POST /api/session/logout - Logging out current application session
+
+ 
+ - POST /api/users/ - Creating users.
+ - PUT/PATCH /api/users/ - Modifying users.
+ - POST /api/users/password-reset - Changing password for users
+ - # TBD
 
 ### OSRM / Optimizer Service
 * Flask
