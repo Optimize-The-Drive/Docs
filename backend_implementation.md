@@ -16,7 +16,13 @@ Our backend and frontend will be using Docker and Docker compose for development
  - POST /api/users/ - Creating users.
  - PUT/PATCH /api/users/ - Modifying users.
  - POST /api/users/password-reset - Changing password for users
- - # TBD
+
+**Trips**
+ -  POST /api/trips/ - Create new Trip
+ -  PUT/PATCH /api/trips/ - Modifying Trips
+ -  DELETE /api/trips/ - Deleting Trips
+ 
+   
 
 ### OSRM / Optimizer Service
 * Flask
