@@ -21,8 +21,9 @@ Our backend and frontend will be using Docker and Docker compose for development
  -  POST /api/trips/ - Create new Trip
  -  PUT/PATCH /api/trips/ - Modifying Trips
  -  DELETE /api/trips/ - Deleting Trips
+ -  POST /api/trips/generate - Generate an optimized trip
+
  
-   
 
 ### OSRM / Optimizer Service
 * Flask
