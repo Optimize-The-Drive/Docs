@@ -9,21 +9,18 @@ Our backend and frontend will be using Docker and Docker compose for development
 
 #### API Routes
 **Users and Authentication**
- - POST /api/session/login - Logging into application
- - POST /api/session/logout - Logging out current application session
-
+ - POST /api/auth/login - Logging into application
+ - POST /api/auth/logout - Logging out current application session
  
- - POST /api/users/ - Creating users.
- - PUT/PATCH /api/users/ - Modifying users.
- - POST /api/users/password-reset - Changing password for users
+ - POST /api/user/ - Creating users.
+ - PUT/PATCH /api/user/<id> - Modifying users.
+ - POST /api/user/password-reset - Changing password for users
+ - POST /api/user/verify - Verify user account
 
 **Trips**
- -  POST /api/trips/ - Create new Trip
- -  PUT/PATCH /api/trips/ - Modifying Trips
- -  DELETE /api/trips/ - Deleting Trips
- -  POST /api/trips/generate - Generate an optimized trip
-
- 
+ -  PUT/PATCH /api/trip/<id> - Modifying Trips
+ -  DELETE /api/trip/<id> - Deleting Trips
+ -  POST /api/trip/generate - Generate an optimized trip
 
 ### OSRM / Optimizer Service
 * Flask
