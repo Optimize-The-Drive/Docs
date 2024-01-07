@@ -11,16 +11,20 @@ Our backend and frontend will be using Docker and Docker compose for development
 **Users and Authentication**
  - POST /api/auth/login - Logging into application
  - POST /api/auth/logout - Logging out current application session
- 
- - POST /api/user/ - Creating users.
- - PUT/PATCH /api/user/<id> - Modifying users.
- - POST /api/user/password-reset - Changing password for users
- - POST /api/user/verify - Verify user account
+ - POST /api/auth/refresh - Generates a new access token
+ - POST /api/user/register - Creating user.
+ - PATCH /api/user/me - Modifying yourself.
+ - GET /api/user/me - Get own user.
+ - POST /api/user/me/password-reset - Changing password
+ - POST /api/user/me/verify - Verify user account
+ - DELETE /api/user/me - Deleting accounts
+ - GET /api/user/<id> - Get users. (TBD if we add ability for user visiblity / sharing)
 
 **Trips**
  -  PUT/PATCH /api/trip/<id> - Modifying Trips
  -  DELETE /api/trip/<id> - Deleting Trips
  -  POST /api/trip/generate - Generate an optimized trip
+ -  GET /api/trip/<id> - GET trips belonging to user.
 
 ### OSRM / Optimizer Service
 * Flask
