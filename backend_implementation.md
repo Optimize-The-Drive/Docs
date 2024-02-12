@@ -23,8 +23,11 @@ Our backend and frontend will be using Docker and Docker compose for development
 **Trips**
  -  PUT/PATCH /api/trip/<id> - Modifying Trips
  -  DELETE /api/trip/<id> - Deleting Trips
- -  POST /api/trip/generate - Generate an optimized trip
- -  GET /api/trip/<id> - GET trips belonging to user.
+ -  POST /api/trip/ - Generate an optimized trip
+ -  GET /api/user/trip/(<id>) - GET trip(s) belonging to user.
+
+**Websocket**
+- GET /api/ws - Websocket Upgrade endpoint
 
 ### OSRM / Optimizer Service
 * Flask
