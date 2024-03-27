@@ -15,17 +15,3 @@ Users are able to create road trips by selecting locations on a map and/or searc
 * If logged in, they can save these trips. Otherwise, they are prompted to sign up to enable this feature.
 * If logged in, previous trips can be loaded and modified through the left control menu.
 * Users can change their password or username.
-
-# Dev Setup 
-
-## Linting
-### Front end
-
-### Back end
-* For back end linting we will force the use of `pylint`
-* Follow this process:
-  * Go to your vscode extentions and install `pylint` for your ide
-  * Next change linting file to -> `ourlintingfile.txt`
-  * Fix any changes the ide suggests and make sure to run pylint in the docker with:  
-    `docker exec -it flask-api /bin/sh -c "pylint app.py"`
-  
